@@ -1,18 +1,21 @@
 name = "Abdallah Ibrahim"  
 age = 30           
 ai_course = True    
-print(f"My name is {name}, I am {age} years old, and my enrollment status in the AI course is {ai_course}.")
 
 
-
-
-
+print("Name:", name)
+print("Age in 5 years:", age + 5)
+print("Is enrolled in CS 335 course?", ai_course)
 
 
 
 topics = ["Logic", "Search", "NLP", "ML", "Bayesian Inference"]
+
+
 topics.append("Computer Vision")
 topics.append("Reinforcement Learning")
+
+
 for index, topic in enumerate(topics, start=1):
     print(f"{index}. {topic}")
 
@@ -20,7 +23,9 @@ for index, topic in enumerate(topics, start=1):
 
 
 
- Student = {"name": "Abdallah", "score": 97}  # Modified score to test different outputs
+
+    student = {"name": "Abdallah", "score": 95}
+
 
 if student["score"] >= 95:
     grade = "A+"
@@ -36,17 +41,18 @@ print(f"{student['name']} received a grade of {grade}.")
 
 
 
-
-
-
 def greet_student(name):
     return f"Welcome to Abdallah, {name}!"
 
-# Square number function
+
+print(greet_student("Abdallah Ibrahim"))
+
+
 def square_number(num):
+    """Returns the square of the input number"""
     return num ** 2
 
 
-print(greet_student("Abdallah"))
-print(square_number(5))   
-print(square_number(10))  
+print(square_number(5))  
+print(square_number(10)) 
+print(square_number(-3)) 
